@@ -1,0 +1,294 @@
+:root {
+    --gold: #FBE762;
+    --biege: #FFFEE3;
+    --blue: #50478A;
+    --blue-dark: #211336;
+    --orange: #FFB179;
+    --black: #211336;
+    --white: #FFFAFA;
+    --inner-padding: .5em 1em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: var(--biege);
+}
+
+p {
+    white-space: pre-line
+}
+
+/* Общие правила */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+}
+
+.main__part {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: .5em
+}
+
+/* Компонент info-section */
+.info-section {
+    padding: var(--inner-padding);
+}
+
+.info-section__head {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin-bottom: .5em;
+}
+
+.info-section__head:after {
+    content: '';
+    display: block;
+    left: 0;
+    bottom: 0;
+    height: .125em;
+    width: max-content;
+    flex: 1;
+}
+
+/* Заголовок страницы */
+.header {
+    padding: var(--inner-padding)
+}
+
+.header__name {
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+.header__job {
+    margin: .5em 0;
+    font-weight: 300;
+    font-size: 1.5em
+}
+
+/* Слайдер */
+.slider {
+    margin-left: .5rem;
+    max-width: 80%;
+    box-shadow: -10px -10px var(--blue);
+}
+
+.slideshow-container {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .mySlides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* Кноки next и prev */
+  .prev,
+  .next {
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    width: auto;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    padding: 1rem;
+    margin-top: -22px;
+    font-size: 1.2em;
+    color: var(--white);
+    text-shadow: 2px 2px 4px black;
+    font-weight: 900;
+    transition: 0.6s ease;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  /* позиционирование next btn справа */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(80, 71, 138, 0.6);
+  }
+
+  /* Подпись фото */
+  .text {
+    position: absolute;
+    padding: var(--inner-padding);
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+  }
+
+  /* Порядковый номер фото (1/3 и т.д.) */
+  .numbertext {
+    position: absolute;
+    color: var(--white);
+    padding: var(--inner-padding);
+    top: 0;
+  }
+
+/* Контакты */
+.contact {
+    transform: translate(0, -25%);
+    background-color: var(--gold);
+    box-shadow: -10px 10px var(--blue-dark);
+    margin: 1rem 0 0 auto;
+    width: 80%;
+    color: var(--black)
+}
+
+.contact i {
+    margin-right: .4em;
+}
+
+.contact .info-section__head:after {
+    background-color: var(--black);
+}
+
+.contact__list__text { 
+    position: relative;
+    display: inline-block;
+    margin-bottom: .1em
+}
+
+.contact__list__text::after { 
+    content: '';
+    position: absolute;
+    bottom: -.2rem;
+    left: 0;
+    height: .125rem;
+    width: 100%;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+}
+
+.contact__list__text:hover::after {
+    transform-origin: left;
+    transform: scaleX(1)
+}
+
+/* Блок навыки и увлечения */
+.skillbox {
+    background-color: var(--black);
+    box-shadow: 10px 10px var(--orange);
+}
+
+.skillbox ul{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap
+}
+
+.skillbox__skills {
+    color: var(--gold)
+}
+
+.skillbox__skills .info-section__head:after  {
+    background-color: var(--gold);
+}
+
+.skillbox__hobbies {
+    color: var(--orange)
+}
+
+.skillbox__hobbies .info-section__head {
+    flex-direction:row-reverse
+}
+
+.skillbox__hobbies .info-section__head:after {
+    background-color: var(--orange);
+}
+
+.skillbox li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s;
+}
+
+.skillbox li:hover {
+    transform: scale(1.2, 1.2)
+}
+
+.skillbox i {
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+/* Обо мне */
+.about .info-section__head {
+    color: var(--blue)
+}
+
+.about .info-section__head:after {
+    background-color: var(--blue)
+}
+
+.about .info-section__info__header {
+    display: flex;
+    line-height: 2em;
+    margin: .5em 0;
+}
+
+.about .info-section__info__header__year {
+    font-size: 1.4em;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+/* Медиа запросы */
+@media (min-width: 480px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 720px) {
+    main {
+        flex-direction: row;
+    }
+}
+@media (min-width: 980px) {
+    body {
+        font-size: 1.4rem;
+    }
+}

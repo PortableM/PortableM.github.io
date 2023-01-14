@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <!-- Первая часть -->
+      <div class="main__part">
+
+        <section class="header">
+          <h1 class="header__name">Мирсалиев <br>Шахзод</h1>
+          <h1 class="header__job">Фронтенд разработчик</h1>
+        </section>
+
+        
+        <section class="slider">
+          <div class="slideshow-container">
+            <div class="mySlides fade" style="background-image: url(images/selfie.jpeg)">
+              <div class="numbertext">1 / 3</div>
+              <div class="slide-image"></div>
+              <div class="text">Я</div>
+            </div>
+            <div class="mySlides fade" style="background-image: url(images/me.jpg)">
+              <div class="numbertext">2 / 3</div>
+              <div class="text">Снова Я</div>
+            </div>
+            <div class="mySlides fade" style="background-image: url(images/n240.jpg)">
+              <div class="numbertext">3 / 3</div>
+              <div class="slide-image"></div>
+              <div class="text">Мое альтер эго</div>
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+          </div>   
+        </section>
+
+        <section class="contact">
+          <div class="info-section">
+            <div class="info-section__head">
+              <h2 class="info-section__head__header">Контакты</h2>
+            </div>
+            <ul class="contact__list">
+              <li>
+                <i class="fa-solid fa-phone fa-fw"></i>
+                <span class="contact__list__text">+79033134027</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope fa-fw"></i>
+                <span class="contact__list__text">smirsaliev2@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-link fa-fw"></i>
+                <span class="contact__list__text">
+                  <a href="http://shakhzod2.netlify.app">shakhzod2.netlify.app</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="skillbox box-container">
+          <div class="info-section skillbox__skills">
+            <div class="info-section__head">
+              <h2 class="info-section__head__header">Навыки</h2>
+            </div>
+            <ul class="skill-box__skill__list">
+              <li>
+                <i class="fa-brands fa-html5 fa-2xl"></i>
+                <span>HTML</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-css3 fa-2xl"></i>
+                <span>CSS</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-js fa-2xl"></i>
+                <span>JavaScript</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-react fa-2xl"></i>
+                <span>React</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-git fa-2xl"></i>
+                <span>git</span>
+              </li>
+            </ul>
+          </div>
+          <div class="info-section skillbox__hobbies">
+            <div class="info-section__head">
+              <h2 class="info-section__head__header">Увлечения</h2>
+            </div>
+            <ul class="skillbox__hobbies__list">
+              <li class="action">
+                <i class="fa-regular fa-futbol fa-xl"></i>
+                <span>football</span>
+              </li>
+              <li class="action">
+                <i class="fa-solid fa-book fa-xl"></i>
+                <span>reading</span>
+              </li>
+              <li class="action">
+                <i class="fa-solid fa-person-running fa-xl"></i>
+                <span>running</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- вторая часть -->
+      <div class="main__part">
+
+        <section class="about">
+          <div class="info-section">
+            <div class="info-section__head">
+              <h2 class="info-section__head__header">Обо мне</h2>
+            </div>
+            <p>Меня зовут Шахзод, мне 29 лет, люблю создавать красивые сайты.
+              Играю и смотрю футбол, увлекаюсь психологией и саморазвитием, читаю книги (в общем интроверт😀).
+              - Признан человеком года по версии журнала "Time" 2006 г.</p>
+          </div>
+          <div class="info-section">
+            <div class="info-section__head">
+              <h2 class="info-section__head__header">Образование</h2>
+            </div>
+            <h4 class="info-section__info__header">РГУП 
+              <span class="info-section__info__header__year">2009-2016</span>
+            </h4>
+            <p>Поступил на юрфак. Приобрел навыки самостоятельной работы, изучил несколько законов </p>
+          </div>
+          <div class="info-section">
+            <div class="info-section__head">
+              <h2 class="info-section__head__header">Опыт</h2>
+            </div>
+            <h4 class="info-section__info__header">АйТи-Матрикс 
+              <span class="info-section__info__header__year">2022</span>
+            </h4>
+            <p>Разработал сайт для организации работы с учебной группой по модели mvc. (добавление записей, выставление оценок, получение сводки по группам и т.д.) 
+            Подключил БД для хранения данных о студентах, их оценок и т.д. Создал Телеграм бота для регистрации домашних заданий студентов. 
+            Регулярно писал отчеты о проделанной работе.</p>
+            <h4 class="info-section__info__header">Лицей №24 
+              <span class="info-section__info__header__year">2016-2021</span>
+            </h4>
+            <p>Подготовил несколько призеров республиканской олимпиады, участников всероссийского этапа. 
+            Был классным руководителем и наставником для выпуска 2021. 
+            Проводил уроки, соответствующие современным стандартам. 
+            Организовывал школьные и классные мероприятия.</p>
+          </div>
+      </div>
+
+    </main>
+    <script src="../src/slider.js"></script>
+  </body>
+  </html>
